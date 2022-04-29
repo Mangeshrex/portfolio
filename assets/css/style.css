@@ -204,7 +204,7 @@ span {
   font-size: 1.1em;
   font-family: "DM Sans", sans-serif;
   text-align: auto;
-  letter-spacing: 2;
+  letter-spacing: 0;
 }
 
 @media (max-width: 600px) {
@@ -304,7 +304,7 @@ span {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1), 0 -8px 12px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.1), 0 -8px 12px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   color: var(--white);
   background-color: var(--background);
   display: block;
@@ -313,10 +313,11 @@ span {
   margin-right: 10px;
   margin-left: 10px;
   max-height: 30%;
-  height: 9rem;
+  height: 8rem;
   transition: 0.3s;
   border: 1px solid var(--teal);
   font-size: 14px;
+  border-radius: 0.5em;
 }
 
 @media (max-width: 650px) {
