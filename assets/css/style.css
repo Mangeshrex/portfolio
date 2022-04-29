@@ -268,9 +268,19 @@ span {
   font-size: 2em;
   font-weight: 100;
   color: var(--white);
-  padding: 30px;
+  padding: 32px;
+  position: relative;
 }
 
+#Project h2::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  background-color: var(--teal);
+  width: 45px;
+  left: 48%;
+  bottom: 20%;
+}
 /* Float four columns side by side */
 .column {
   float: right;
