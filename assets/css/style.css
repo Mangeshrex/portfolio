@@ -308,16 +308,27 @@ span {
   color: var(--white);
   background-color: var(--background);
   display: block;
-  padding: 16px;
+  padding: 10px;
   text-align: center;
   margin-right: 10px;
   margin-left: 10px;
   max-height: 30%;
-  height: 10rem;
+  height: 9rem;
   transition: 0.3s;
   border: 1px solid var(--teal);
+  font-size: 14px;
 }
 
+@media (max-width: 650px) {
+  .card {
+    height: 7rem;
+    font-size: 13px;
+  }
+}
+
+.card p {
+  font-size: 15px;
+}
 .card:hover {
   margin-top: -10px;
   background-color: var(--teal);
@@ -326,12 +337,10 @@ span {
   cursor: pointer;
 }
 
-.card a {
-  font-size: 20px;
-}
 #Project .card:hover a {
   color: var(--background-dark);
-} 
+}
+
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
