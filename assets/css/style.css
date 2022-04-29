@@ -263,6 +263,10 @@ span {
   transform-origin: bottom center;
 }
 
+#Project {
+  margin-top: 5%;
+}
+
 #Project h2{
   font-family: 'DM Sans', sans-serif;
   font-size: 2em;
@@ -281,6 +285,7 @@ span {
   left: 48%;
   bottom: 20%;
 }
+
 /* Float four columns side by side */
 .column {
   float: right;
