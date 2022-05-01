@@ -1,4 +1,7 @@
 
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@200&display=swap');
+
 :root {
   --teal: #8ed8d1;
   --background-dark: #181f21;
@@ -36,66 +39,63 @@ li, ul, button {
   padding: 10px 10px;
 } */
 
-.navbar {
-  overflow: hidden;
+.navbar-content {
   background-color: var(--background);
-  position:absolute; /* Set the navbar to fixed position */
-  
-  top: 0;
-  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 0.5em;
+  margin: 0px 30px 0px 30px;
+}
+
+.nav {
+  overflow: hidden;
+  position: relative;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--white);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 2;
-  border: none;
-  outline: none;
 }
 
-.navbar a {
-  float: left;
-  display: block;
+.nav a {
   color: var(--white);
-  text-align: center;
-  padding: 12px 14px;
   text-decoration: none;
-  font-size: 17px;
-  border: none;
-  outline: none;
+  padding: 5px;
+  transition: 0.3s;
 }
 
-.navbar a:hover {
-  background-color: var(--teal);
+.nav a:hover {
   color: var(--background-dark);
+  background-color: #8ad8d1;
 }
 
-.navbar a.active {
-  background-color: var(--background-dark);
-  color: var(--white);
+.nav li {
+  display: inline-block;
 }
 
-.navbar .icon {
-  display: none;
+.nav ul {
+  display: flex;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
+ul::after {
+  display: table;
+  clear: both;
+}
+
+li {
+  float: left;
+  padding: 0px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    font-size: 15px;
+    margin: 2% 0% 0% 0%; 
   }
 }
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
 
 .welcome-section {
   /* width: 100%; */
@@ -112,7 +112,7 @@ li, ul, button {
 }
 
 .welcome-section h4 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   color: #3b4244;
   font-size: 20px;
   width: 100%;
@@ -172,14 +172,42 @@ span {
 }
 
 .reveal {
-  transform: translateY(150px);
   opacity: 0;
-  transition: 1s all ease-out;
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 #heading {
@@ -226,9 +254,6 @@ span {
   font-weight: 510;
   text-align: center;
   display: block;
-  /* width: 100vh; */
-  animation-name: right;
-  animation-duration: 4s;
 }
 
 @media screen and (max-width: 500px) {
@@ -236,6 +261,7 @@ span {
     margin: 2em 2em 2em 2em;
   }
 }
+
 #info a {
   text-decoration: none;
   color: var(--teal);
