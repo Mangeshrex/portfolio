@@ -173,7 +173,7 @@ span {
 
 .reveal {
   opacity: 0;
-  animation: fadeIn linear 1s;
+  animation: fadeIn linear 1s infinite;
   -webkit-animation: fadeIn 2s;
   -moz-animation: fadeIn 2s;
   -o-animation: fadeIn 2s;
