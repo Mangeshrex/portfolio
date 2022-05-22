@@ -1,10 +1,11 @@
+
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@200&display=swap');
 
 :root {
   --teal: #8ed8d1;
-  --background-dark: #181f21;
-  --background: #22292b;
+  --background-dark: #131a1c;
+  --background: #181f21;
   --white: #dadadd;
 }
 
@@ -18,13 +19,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: var(--background-dark);
-  font-family: "DM Sans", sans-serif;
-}
-
 li, ul, button {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1em;
   color: var(--white);
   text-decoration: none;
@@ -43,7 +39,6 @@ li, ul, button {
   padding: 10px 10px 10px 10px;
   border-radius: 0.5em;
   margin: 0px 30px 0px 30px;
-  z-index: 1;
 }
 
 .nav {
@@ -90,30 +85,28 @@ li {
   padding: 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .nav {
     font-size: 15px;
-    margin: 2% 0% 0% 0%; 
-    width: 100%;
   }
 }
 
 .welcome-section {
   /* width: 100%; */
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--white);
   height: 100vh;
   font-size: 40px;
+  font-weight: 700;
   justify-content: center;
   align-items: center;
-  padding-bottom: 300px;
   padding-top: 300px;
-  top: 80%;
   left: 50%;
+  background-color: #131a1c;
 }
 
 .welcome-section h4 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains', monospace;
   color: #3b4244;
   font-size: 20px;
   width: 100%;
@@ -124,20 +117,24 @@ li {
   height: 100vh;
 }
 
+.welcome-section h4 {
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
+  .welcome-section {
+    /* margin: 2em 2em 2em 2em; */
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+    height: 100vh;
+  }
   .welcome-section h2 {
     font-size: 32px;
   }
   .welcome-section h4 {
     font-size: 16px;
   }
-  .welcome-section {
-    margin: 2em 2em 2em 2em;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 30vh;
   }
-}
 
 @media (max-width: 500px) {
   .welcome-section h2 {
@@ -168,10 +165,8 @@ li {
 }
 
 span {
-  color: var(--teal);
-  font-weight: 400;
+  color: #8ad8d1;
 }
-
 
 .reveal {
   opacity: 0;
@@ -219,7 +214,13 @@ span {
 }
 
 #heading {
-  font-family: "DM Sans", sans-serif;
+  background-color: #1d2426;
+  height: 100vh;
+  padding-top: 200px;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
   color: var(--white);
   padding: 10px 10px 10px 10px;
   margin: 0% 5% 0% 5%;
@@ -229,29 +230,25 @@ span {
   margin-right: 10%; */
   /* width: 90vh; */
   height: 50vh;
-  z-index: 1;
 }
 
-@media (max-width: 400px) {
-  #heading {
-    height: 60vh;
-  }
-}
-#heading h1 {
+.heading h1 {
   font-size: 2rem;
+  font-weight: 400px;
 }
 
-#heading p {
+.heading p {
   font-size: 1.1em;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   text-align: auto;
-  letter-spacing: 0;
+  font-weight: 200;
 }
 
 @media (max-width: 600px) {
   #heading {
     /* width: 350px; */
     margin: auto;
+    height: 100vh;
   }
 }
 
@@ -259,9 +256,12 @@ span {
   font-family: "DM Sans", sans-serif;
   font-size: 1.2em;
   line-height: normal;
-  font-weight: 510;
   text-align: center;
   display: block;
+  font-weight: 100;
+  /* width: 100vh; */
+  animation-name: right;
+  animation-duration: 4s;
 }
 
 @media screen and (max-width: 500px) {
@@ -270,6 +270,11 @@ span {
   }
 }
 
+@media screen and (max-width: 400px) {
+  #info {
+    margin: 1em 1em 1em 1em;
+  }
+}
 #info a {
   text-decoration: none;
   color: var(--teal);
@@ -303,13 +308,22 @@ span {
 }
 
 #Project {
-  margin-top: 0%;
+  background-color: #272e30;
+  /* padding: 2% 0% 2% 0%; */
+  height: 100vh;
+  padding-top: 200px;
+}
+
+@media (max-width: 400px) {
+  #Project {
+    height: 100vh;
+  }
 }
 
 #Project h2{
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2em;
-  font-weight: 100;
+  font-weight: 800;
   color: var(--white);
   padding: 32px;
   position: relative;
@@ -320,9 +334,12 @@ span {
   height: 2px;
   position: absolute;
   background-color: var(--teal);
+  border-top-left-radius: 50% 100%;
+      content: '';
+    border-top-right-radius: 50% 100;
+  z-index : -1;
   width: 45px;
   left: 48%;
-  bottom: 20%;
 }
 
 /* Float four columns side by side */
@@ -330,7 +347,7 @@ span {
   float: right;
   width: 25%;
   padding: 0 10px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1em;
   color: var(--white);
 }
@@ -358,6 +375,7 @@ span {
 
 /* Style the counter cards */
 .card {
+  font-family: "Poppins", sans-serif;
   box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.1), 0 -8px 12px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   color: var(--white);
   background-color: var(--background);
@@ -367,7 +385,7 @@ span {
   margin-right: 10px;
   margin-left: 10px;
   max-height: 30%;
-  height: 8rem;
+  height: 9rem;
   transition: 0.3s;
   border: 1px solid var(--teal);
   font-size: 14px;
@@ -376,7 +394,7 @@ span {
 
 @media (max-width: 650px) {
   .card {
-    height: 7rem;
+    height: 8rem;
     font-size: 13px;
   }
 }
@@ -384,6 +402,7 @@ span {
 .card p {
   font-size: 15px;
 }
+
 .card:hover {
   margin-top: -10px;
   background-color: var(--teal);
@@ -396,7 +415,9 @@ span {
   color: var(--background-dark);
 }
 
-
+.card p {
+  font-weight: 1000;
+}
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
@@ -407,23 +428,24 @@ span {
 }
 
 .contact-me {
-  padding: 30px 10px 30px 10px;
+  padding: 0px 10px 30px 10px;
+  background-color: #31383a;
 }
 
 .contact-me h1 {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8em;
-  font-weight: 200;
+  font-weight: 800;
   color: var(--white);
 }
 
 .contact-me p {
   font-family: "DM Sans", sans-serif;
   font-size: 1.2em;
-  font-weight: 200;
+  font-weight: 500;
   color: var(--white);
   text-align: center;
-  margin: 20px 50px 20px 50px;
+  margin: 0px 50px 20px 50px;
 }
 
 .contact-me i {
@@ -453,12 +475,11 @@ span {
   
 }
 #footer {
-  padding-top: 30px;
   background-color: var(--background);
   color: var(--white);
   text-align: center;
   font-size: 1em;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 15px 15px 15px 15px;
   /* width: 100%; */
 }
