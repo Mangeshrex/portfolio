@@ -452,28 +452,23 @@ span {
   font-size: 2em;
 }
 
-.contact__links {
-  display: flex;
-  justify-content: center;
+.contact_links a {
+    padding: 15px:
+    background-color: blue;
+    color: white;
+    line-height: 5rem;
 }
 
-.contact__links  {
-  text-align: center;
-  border-radius: 35px;
-  color: var(--white);
-  font-size: 21px;
+.contact_links a:hover {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
 }
 
-.contact__links a {
-  text-decoration: none;
-  color: var(--white);
-  padding: 2px;
+.contact_links a i {
+    color: white;
 }
 
-.contact__links a:hover {
-  color: var(--teal);
-  
-}
 #footer {
   background-color: var(--background);
   color: var(--white);
