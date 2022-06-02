@@ -147,12 +147,14 @@ li {
 }
 
 .demo-bg {
-  opacity: 0.1;
+  opacity: 0.2;
   position: absolute;
   left: 0;
   top: 0;
   width: auto;
   height: 100vh;
+  pointer-events: none;
+  background-size: cover;
 }
 
 .content h4 {
@@ -184,8 +186,9 @@ li {
 .contact_links {
   margin-left: 100px;
   margin-top: 5%;
-  overflow: visible;
-  border: 10px white;
+  overflow: hidden;
+  color: white;
+  z-index: -1
 }
 
 .contact_links li {
@@ -202,12 +205,22 @@ li {
 
 .contact_links a {
   color: var(--white);
+  text-decoration: none;
 }
 
 .contact_links a:hover {
   background-color: var(--white);
   color: var(--background);
 }
+
+/* .contact_links i {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+  border-radius: 0.2em;
+  padding: 5px; 
+} */
 
 /* Font awesome style ends
 .reveal {
