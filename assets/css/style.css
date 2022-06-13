@@ -275,16 +275,19 @@ li {
 
 
 .heading {
+  position: absolute;
+  z-index: 1;
   font-family: "Poppins", sans-serif;
   color: var(--white);
   padding: 10px 10px 10px 10px;
   /* margin: 0% 5% 0% 5%; */
-  /* margin-top: 10%;
-  margin-bottom: 5%;
   margin-left: 10%;
-  margin-right: 10%; */
-  /* width: 90vh; */
-  height: 50vh;
+  margin-right: 10%; 
+  font-size: 15px;
+  padding-bottom: 150px;
+  padding-top: 100px;
+  /* width: 90vh;
+  /* height: 50vh; */
 }
 
 .heading h1 {
@@ -305,6 +308,9 @@ li {
     /* width: 350px; */
     margin: auto;
     height: 100vh;
+  }
+  .heading h1 {
+    padding-right: 22px;
   }
 }
 
