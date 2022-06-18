@@ -154,9 +154,20 @@ li {
   width: auto;
   height: 100vh;
   pointer-events: none;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  background-size:cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
+@media (max-width: 500px) {
+  .demo-bg {
+    scroll-behavior: none;
+  }
+}
 .content h4 {
   font-size: 15px;
   color: var(--white);
@@ -188,29 +199,25 @@ li {
   margin-top: 5%;
   overflow: hidden;
   color: white;
-  z-index: -1
+  z-index: -1;
 }
 
 .contact_links li {
   list-style: none;
 }
 
+.contact_links a {
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (max-width: 500px) {
   .contact_links {
+    align-items: center;
     margin-left: 50px;
     margin-top: 5%;
     font-size: 30px;
   }
-}
-
-.contact_links a {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.contact_links a:hover {
-  background-color: var(--white);
-  color: var(--background);
 }
 
 /* .contact_links i {
@@ -285,7 +292,8 @@ li {
   margin-right: 10%; 
   font-size: 15px;
   padding-bottom: 150px;
-  padding-top: 100px;
+  padding-top: 200px;
+  height: 100vh;
   /* width: 90vh;
   /* height: 50vh; */
 }
