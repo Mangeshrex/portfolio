@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+  --bg: #cdd6d8;
+  --fg: #181f21;
+  --accent: #67b0e8;
+}
+
+html {
+  font-family: "DM Sans", sans-serif;
+  background: var(--bg);
+  src: url("./assets/SFProDisplay-Regular.ttf");
+}
+
+
+.navbar-content {
+  background-color: var(--background);
+  padding: 10px 100px 10px 100px;
+  border-radius: 0.5em;
+  margin: 0px 30px 0px 30px;
+}
+
+.nav {
+  overflow: hidden;
+  position: relative;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  transition: 0.3s;
+  border: 1em ;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #131a1c;
+  border-image: initial;
+  border-radius: 10px;
+}
+
+.nav a:hover {
+  color: var(--background-dark);
+  background-color: var(--accent);
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav ul {
+  display: flex;
+}
+
+ul::after {
+  display: table;
+  clear: both;
+}
+
+li {
+  float: left;
+  padding: 0px;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    font-size: 15px;
+  }
+  .navbar-content {
+    justify-content:space-evenly;
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+.navbar {
+  display: inline;
+}
+
+.container {
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+.home-page {
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .home-page h4 {
+    font-size: 1em;
+  }
+}
+.home-page h1 {
+  margin: 10% 20% 0% 20%;
+  font-size: 4rem;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .home-page h1 {
+    margin: 50% 20% 0% 20%;
+    font-size: 2rem;
+  }
+}
+.home-page h4 {
+  margin: 2% 20% 0% 20%;
+}
+
+.about-page h2 {
+  font-size: 3em;
+  margin: 5% 20% 0% 20%;
+}
+
+.about-page p {
+  margin: 2% 20% 0% 20%;
+  font-size: 1.2em;
+}
+
+.links {
+  color: var(--fg);
+  margin: 2% 0% 0% 20%;
+}
+
+.links a {
+  color: var(--fg);
+}
+@media (max-width: 500px){
+  .about-page h2 {
+    font-size: 2rem;
+    margin-top: 20%;
+  }
+  .about-page p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-page h2 {
+    font-size: 5vh;
+    margin-top: 20%;
+  }
+  .about-page p {
+    font-size: 2vh ;
+  }
+  
+}
+span {
+  color: #131a1c;
+  font-style: bold;
+}
+
