@@ -24,8 +24,8 @@
 
 html {
   font-family: "SFPro-Display";
-  background-color: black;
   color: white;
+  background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,8 +37,9 @@ nav {
   overflow: hidden;
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: center;
   /* align-items: center; */
+  font-size: 20px;
 }
 
 body {
