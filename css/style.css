@@ -44,6 +44,8 @@ nav {
 
 body {
   margin: 0% 15% 0% 15%;
+  height: 100vh;
+  padding: 20px;
 }
 
 p {
@@ -79,6 +81,9 @@ footer {
   justify-content: center;
 }
 
+footer a {
+  padding: 20px;
+}
 @media (max-width: 500px) {
   html {
     font-size: 15px;
@@ -116,4 +121,13 @@ hr {
 
 #interests, ul, li {
   list-style: none;
+}
+
+code, #my-pgp-key  {
+  text-align: flex-start;
+  display: block
+}
+
+.webring {
+  display: inline;
 }
