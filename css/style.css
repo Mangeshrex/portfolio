@@ -8,7 +8,7 @@
 }
 
 .title {
-  padding: 1em;
+  padding: 2em;
        font-family: Nintendoid1;
        color: #eee;
        font-size: 1em;
@@ -48,6 +48,35 @@ body {
   padding: 20px;
 }
 
+.container {
+  /* border: 2px solid white; */
+  display: grid;
+  grid-template-rows: 500px;
+  grid-template-columns: 200px ;
+  grid-columns-gap: 500px;
+  grid-row-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 1em 1em 1em;
+}
+
+.container-elem {
+  font-size: 15px;
+  text-align: center;
+}
+.container-elem h1 {
+  padding: 0px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-row: 250px;
+    drid-template-column: 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    
+  }
+}
 p {
   color: white;
   top: 50%;
@@ -59,13 +88,6 @@ p {
 a {
   color: white;
 }
-
-a:hover {
-  background-color: white;
-  color: black;
-  padding: 5px;
-}
-
 
 img {
   display: block;
